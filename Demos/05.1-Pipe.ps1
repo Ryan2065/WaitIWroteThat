@@ -1,15 +1,15 @@
-$MyCount = 0..2
+$MyCount = 0..2000
 $TotalCountPipe = 0
 $TotalCountNoPipe = 0
 
 
-Measure-Command {
+$SBOne = {
     $MyCount | ForEach-Object { 
         $TotalCountPipe = $TotalCountPipe + $PSItem 
     }
 }
 
-Measure-Command {
+$SBTwo = {
     foreach($Number in $MyCount) {
         $TotalCountNoPipe = $TotalCountNoPipe + $Number
     }
