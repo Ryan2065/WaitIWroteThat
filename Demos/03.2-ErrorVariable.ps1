@@ -7,7 +7,7 @@ try{
     Write-Output 'I was successful!'
 }
 catch {
-    Write-Ouput $_
+    Write-Output $_
 }
 
 #region EVEN BETTER!!!!!
@@ -22,7 +22,7 @@ catch [System.Management.Automation.RuntimeException]{
     Set-MMSContentView -Name '03.2-ErrorVariable' -ShowIn 2
 }
 catch {
-    Write-Ouput $_
+    Write-Output $_
 }
 #endregion
 

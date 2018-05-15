@@ -2,7 +2,7 @@
 $Script:MyHorribleIdea = 'Breaking scope!'
 
 Function New-Scope {
-    Write-Output $MyHorribleIdea
+    Write-Output $Script:MyHorribleIdea
 }
 Clear-Host
 $MyHorribleIdea

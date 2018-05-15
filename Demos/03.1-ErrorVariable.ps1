@@ -10,3 +10,4 @@ if ($Error[0]) {
 else {
     Write-Output 'I was successful!'
 }
+$ErrorActionPreference = 'Continue'

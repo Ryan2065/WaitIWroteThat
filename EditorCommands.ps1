@@ -29,3 +29,18 @@ Function Measure-MMSCommand {
     $Results2
     
 }
+
+
+Function Get-ADComputer {
+    Class MMSADComputer {
+        [string]$Name
+        MMSADComputer(){
+            $this.Name = 'COMP' + (Get-Random -Minimum 10000 -Maximum 99999)
+        }
+    }
+    $count = 0
+    while($count -lt 10932){
+        $count++
+        [MMSADComputer]::new()
+    }
+}
